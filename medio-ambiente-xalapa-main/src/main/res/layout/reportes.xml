@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient2"
+        android:backgroundTintMode="src_over"
+        android:foregroundTintMode="add"
+        tools:context=".menu"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="116dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="22dp"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Reportes" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoText="true"
+            android:text="Enviar"
+            tools:layout_editor_absoluteX="284dp"
+            tools:layout_editor_absoluteY="667dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="193dp"
+            android:layout_height="20dp"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="100dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Descripción del Problema" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="375dp"
+            app:cardBackgroundColor="@color/white"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="180dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Descripción" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/btnEnviarFoto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="667dp" />
+
+        <EditText
+            android:id="@+id/txtMensaje2"
+            android:layout_width="215dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="@string/escribe_un_mensaje"
+            android:minHeight="48dp"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="665dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
